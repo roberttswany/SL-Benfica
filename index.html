@@ -8,33 +8,413 @@
       content="Este é um site falando sobre o SL Benfica"
     />
     <meta name="author" content="Robertt Chihuissa" />
-
     <link rel="stylesheet" href="css/style.css" />
-
     <title>SL Benfica - Site Oficial</title>
   </head>
 
   <body>
+    <div id="loading-screen">
+      <div class="loading-content">
+        <p class="loading-logo">SLB</p>
+        <div class="spinner"></div>
+      </div>
+    </div>
+
     <header class="cabecalho">
       <div class="container">
-        <h1 class="Logo">SL Benfica</h1>
+        <h1 class="logo">SL Benfica</h1>
         <nav>
           <ul class="menu">
-            <li>
-              <a class="link-nav" href="#inicio">Início</a>
-            </li>
-
-            <li><a class="link-nav" href="#noticias">Notícias</a></li>
-
-            <li><a class="link-nav" href="#jogadores">Jogadores</a></li>
-
-            <li><a class="link-nav" href="#jogos">Jogos</a></li>
-
-            <li><a class="link-nav" href="#historia">História</a></li>
+            <li><a href="#inicio" class="link-nav">Início</a></li>
+            <li><a href="#noticias" class="link-nav">Notícias</a></li>
+            <li><a href="#jogadores" class="link-nav">Jogadores</a></li>
+            <li><a href="#jogos" class="link-nav">Jogos</a></li>
+            <li><a href="#historia" class="link-nav">História</a></li>
           </ul>
         </nav>
       </div>
     </header>
+
+    <section id="inicio" class="hero">
+      <div class="hero-conteudo">
+        <h2 class="hero-titulo">E Plurium Unum</h2>
+        <p class="hero-subtitulo">Um Clube, Milhões de Corações</p>
+        <a href="#" class="botao-principal">Ver Jogos</a>
+      </div>
+    </section>
+
+    <section id="noticias" class="seccao">
+      <div class="container">
+        <h2 class="titulo-seccao">Últimas Notícias</h2>
+        <div class="filtros">
+          <button class="filtro-botao" data-categoria="todas">Todas</button>
+          <button class="filtro-botao" data-categoria="equipa">Equipa</button>
+          <button class="filtro-botao" data-categoria="transferencias">
+            Transferências
+          </button>
+          <button class="filtro-botao" data-categoria="formacao">
+            Formação
+          </button>
+        </div>
+        <div class="grelha-noticias">
+          <article class="card-noticia" data-categoria="equipa">
+            <h3>Crise interna abala o plantel</h3>
+            <p class="data">08 de Maio 2053</p>
+            <p class="resumo">
+              O SL Benfica está envolvido num escândalo após a divulgação de
+              documentos que apontam para irregularidades financeiras internas.
+              As autoridades já iniciaram uma investigação oficial enquanto a
+              direção tenta conter os danos. Jogadores demonstram preocupação
+              com a instabilidade dentro do clube. Alguns atletas já consideram
+              uma possível saída no final da época. A situação continua a
+              evoluir e promete novos desenvolvimentos.
+            </p>
+          </article>
+          <article class="card-noticia" data-categoria="transferencias">
+            <h3>Estrela do Benfica na mira da Europa</h3>
+            <p class="data">07 de Maio 2053</p>
+            <p class="resumo">
+              Um dos principais jogadores do Benfica está a despertar interesse
+              de vários clubes europeus. Após uma época brilhante, o atleta
+              tornou-se prioridade no mercado internacional. A direção encarnada
+              tenta segurar o jogador com uma renovação de contrato. No entanto,
+              os valores envolvidos podem tornar a transferência inevitável. A
+              decisão final deverá ser tomada nas próximas semanas.
+            </p>
+          </article>
+          <article class="card-noticia" data-categoria="formacao">
+            <h3>Academia forma nova geração de talentos</h3>
+            <p class="data">06 de Maio 2053</p>
+            <p class="resumo">
+              A formação do Benfica volta a destacar-se com uma nova geração de
+              jovens promissores. Os sub-19 conquistaram mais um título nacional
+              com grande superioridade. Vários jogadores já estão a ser
+              observados pela equipa principal. A academia mantém-se como uma
+              das melhores da Europa. O futuro do clube parece garantido com
+              estes novos talentos.
+            </p>
+          </article>
+          <article class="card-noticia" data-categoria="equipa">
+            <h3>Treinador responde à polémica</h3>
+            <p class="data">05 de Maio 2053</p>
+            <p class="resumo">
+              O treinador do Benfica falou pela primeira vez sobre o escândalo
+              que envolve o clube. Em conferência de imprensa, pediu calma aos
+              adeptos e foco nos jogos. Garantiu que o grupo está unido apesar
+              da pressão externa. A equipa continua a preparar-se para os
+              próximos desafios. O ambiente no balneário permanece tenso mas
+              controlado.
+            </p>
+          </article>
+          <article class="card-noticia" data-categoria="transferencias">
+            <h3>Benfica prepara reforço milionário</h3>
+            <p class="data">04 de Maio 2053</p>
+            <p class="resumo">
+              O Benfica está a negociar a contratação de um jovem talento
+              sul-americano. O jogador é visto como uma promessa para o futuro
+              do clube. As negociações avançam de forma positiva entre as
+              partes. O valor da transferência poderá bater recordes internos. O
+              anúncio oficial poderá acontecer em breve.
+            </p>
+          </article>
+          <article class="card-noticia" data-categoria="formacao">
+            <h3>Projeto juvenil recebe investimento histórico</h3>
+            <p class="data">03 de Maio 2053</p>
+            <p class="resumo">
+              O Benfica anunciou um grande investimento na sua academia de
+              formação. Novas infraestruturas serão construídas para melhorar o
+              desenvolvimento dos atletas. O objetivo é continuar a produzir
+              jogadores de alto nível. O projeto já está a ser elogiado por
+              especialistas do futebol. A formação continua a ser uma prioridade
+              estratégica do clube.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="jogadores" class="seccao seccao-cinza">
+      <div class="container">
+        <h2 class="titulo-seccao">Plantel 2025/2026</h2>
+        <div class="grelha-jogadores">
+          <div
+            class="card-jogador"
+            data-nome="Ángel Di María"
+            data-posicao="Extremo"
+            data-numero="11"
+            data-pais="Argentina"
+            data-idade="36"
+            data-bio="Jogador experiente, campeão do mundo, conhecido pela sua técnica e visão de jogo."
+          >
+            <span class="numero-jogador">11</span>
+            <h3>Di María</h3>
+            <p class="posicao">Extremo</p>
+            <p class="pais">Argentina</p>
+          </div>
+          <div
+            class="card-jogador"
+            data-nome="Vangelis Pavlidis"
+            data-posicao="Avançado"
+            data-numero="14"
+            data-pais="Grécia"
+            data-idade="25"
+            data-bio="Avançado com grande capacidade de finalização e presença na área."
+          >
+            <span class="numero-jogador">14</span>
+            <h3>Pavlidis</h3>
+            <p class="posicao">Avançado</p>
+            <p class="pais">Grécia</p>
+          </div>
+          <div
+            class="card-jogador"
+            data-nome="Nicolás Otamendi"
+            data-posicao="Defesa Central"
+            data-numero="30"
+            data-pais="Argentina"
+            data-idade="36"
+            data-bio="Capitão experiente, forte na defesa e líder dentro de campo."
+          >
+            <span class="numero-jogador">30</span>
+            <h3>Otamendi</h3>
+            <p class="posicao">Defesa Central</p>
+            <p class="pais">Argentina</p>
+          </div>
+          <div
+            class="card-jogador"
+            data-nome="Anatoliy Trubin"
+            data-posicao="Guarda-redes"
+            data-numero="1"
+            data-pais="Ucrânia"
+            data-idade="23"
+            data-bio="Guarda-redes com excelentes reflexos e grande potencial."
+          >
+            <span class="numero-jogador">1</span>
+            <h3>Trubin</h3>
+            <p class="posicao">Guarda-redes</p>
+            <p class="pais">Ucrânia</p>
+          </div>
+          <div
+            class="card-jogador"
+            data-nome="Orkun Kökçü"
+            data-posicao="Médio"
+            data-numero="10"
+            data-pais="Turquia"
+            data-idade="23"
+            data-bio="Médio criativo, responsável pela construção de jogo e passes decisivos."
+          >
+            <span class="numero-jogador">10</span>
+            <h3>Kökçü</h3>
+            <p class="posicao">Médio</p>
+            <p class="pais">Turquia</p>
+          </div>
+          <div
+            class="card-jogador"
+            data-nome="Álvaro Carreras"
+            data-posicao="Defesa Esquerdo"
+            data-numero="3"
+            data-pais="Espanha"
+            data-idade="21"
+            data-bio="Lateral rápido e ofensivo, com grande capacidade de apoiar o ataque."
+          >
+            <span class="numero-jogador">3</span>
+            <h3>Carreras</h3>
+            <p class="posicao">Defesa Esquerdo</p>
+            <p class="pais">Espanha</p>
+          </div>
+          <div
+            class="card-jogador"
+            data-nome="António Silva"
+            data-posicao="Defesa Central"
+            data-numero="4"
+            data-pais="Portugal"
+            data-idade="20"
+            data-bio="Jovem promessa do Benfica, sólido na defesa e muito inteligente em campo."
+          >
+            <span class="numero-jogador">4</span>
+            <h3>António Silva</h3>
+            <p class="posicao">Defesa Central</p>
+            <p class="pais">Portugal</p>
+          </div>
+          <div
+            class="card-jogador"
+            data-nome="Florentino Luís"
+            data-posicao="Médio Defensivo"
+            data-numero="61"
+            data-pais="Portugal"
+            data-idade="24"
+            data-bio="Especialista defensivo, excelente na recuperação de bola e equilíbrio da equipa."
+          >
+            <span class="numero-jogador">61</span>
+            <h3>Florentino</h3>
+            <p class="posicao">Médio Defensivo</p>
+            <p class="pais">Portugal</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div id="modal-jogador" class="modal">
+      <div class="modal-conteudo">
+        <span class="modal-fechar">&times;</span>
+        <h2 id="modal-nome"></h2>
+        <p id="modal-posicao"></p>
+        <p id="modal-numero"></p>
+        <p id="modal-pais"></p>
+        <p id="modal-idade"></p>
+        <p id="modal-bio"></p>
+      </div>
+    </div>
+
+    <section id="jogos" class="seccao">
+      <div class="container">
+        <h2 class="titulo-seccao">Próximos Jogos</h2>
+        <div class="contador-caixa">
+          <h3>Próximo Jogo em:</h3>
+          <div id="contador">
+            <div class="contador-item">
+              <span id="dias">00</span>
+              <small>Dias</small>
+            </div>
+            <div class="contador-item">
+              <span id="horas">00</span>
+              <small>Horas</small>
+            </div>
+            <div class="contador-item">
+              <span id="minutos">00</span>
+              <small>Min</small>
+            </div>
+            <div class="contador-item">
+              <span id="segundos">00</span>
+              <small>Seg</small>
+            </div>
+          </div>
+        </div>
+        <table class="tabela-jogos">
+          <thead>
+            <tr>
+              <th>Data</th>
+              <th>Adversário</th>
+              <th>Competição</th>
+              <th>Local</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>27 Abr 2026</td>
+              <td>Sporting</td>
+              <td>Liga Portuguesa</td>
+              <td>Estádio da Luz</td>
+            </tr>
+            <tr>
+              <td>03 Mai 2026</td>
+              <td>Sporting CP</td>
+              <td>Taça de Portugal</td>
+              <td>Estádio José Alvalade</td>
+            </tr>
+            <tr>
+              <td>10 Mai 2026</td>
+              <td>SC Braga</td>
+              <td>Liga Portugal</td>
+              <td>Estádio da Luz</td>
+            </tr>
+            <tr>
+              <td>17 Mai 2026</td>
+              <td>Vitória SC</td>
+              <td>Liga Portugal</td>
+              <td>Estádio D. Afonso Henriques</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="historia" class="seccao seccao-cinza">
+      <div class="container">
+        <h2 class="titulo-seccao">História</h2>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-ponto"></div>
+            <div class="timeline-conteudo">
+              <h3>1904 — Fundação</h3>
+              <p>
+                O Sport Lisboa e Benfica foi fundado a 28 de fevereiro de 1904,
+                tornando-se um dos maiores clubes de Portugal e do mundo.
+              </p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-ponto"></div>
+            <div class="timeline-conteudo">
+              <h3>1961–1962 — Bicampeão Europeu</h3>
+              <p>
+                O Benfica conquistou a Taça dos Clubes Campeões Europeus em dois
+                anos consecutivos, afirmando-se como uma potência do futebol
+                mundial.
+              </p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-ponto"></div>
+            <div class="timeline-conteudo">
+              <h3>2003 — Novo Estádio da Luz</h3>
+              <p>
+                Foi inaugurado o novo Estádio da Luz, um dos maiores e mais
+                modernos estádios da Europa, com capacidade para mais de 65 000
+                adeptos.
+              </p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-ponto"></div>
+            <div class="timeline-conteudo">
+              <h3>2024/2025 — Nova Era</h3>
+              <p>
+                O Benfica inicia um novo ciclo com investimento no plantel e na
+                formação, com o objetivo de regressar ao topo do futebol
+                europeu.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="rodape">
+      <div class="container">
+        <div class="rodape-grelha">
+          <div class="rodape-coluna">
+            <h3>SL Benfica</h3>
+            <p>Av. Eusébio da Silva Ferreira</p>
+            <p>1500-313 Lisboa</p>
+          </div>
+          <div class="rodape-coluna">
+            <h3>Links Rápidos</h3>
+            <ul>
+              <li><a href="#inicio">Início</a></li>
+              <li><a href="#noticias">Notícias</a></li>
+              <li><a href="#jogadores">Jogadores</a></li>
+              <li><a href="#jogos">Jogos</a></li>
+              <li><a href="#historia">História</a></li>
+            </ul>
+          </div>
+          <div class="rodape-coluna">
+            <h3>Redes Sociais</h3>
+            <ul>
+              <li><a href="#">Facebook</a></li>
+              <li><a href="#">Instagram</a></li>
+              <li><a href="#">Twitter/X</a></li>
+              <li><a href="#">YouTube</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="rodape-base">
+          <p>&copy; 2026 SL Benfica - Todos os direitos reservados</p>
+          <p class="powered">Powered by Lyrical Corp</p>
+        </div>
+      </div>
+    </footer>
+
+    <button id="btn-topo" title="Voltar ao topo">⇧</button>
 
     <script src="js/script.js"></script>
   </body>
